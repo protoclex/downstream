@@ -1,0 +1,195 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #181818;
+}
+
+.comment {
+  font-weight: bold;
+  font-style: italic;
+  color: #555555;
+}
+
+.keyword, .storage {
+  font-weight: bold;
+  color: #B75C4C;
+}
+
+.constant.numeric {
+  color: #4F9B00;
+}
+
+.constant {
+  color: #194A87;
+}
+
+.constant.language {
+  color: #194A87;
+}
+
+.variable.language, .variable.other {
+  color: #4F6489;
+}
+
+.string {
+  color: #939F84;
+}
+
+.constant.character.escape, .string .source {
+  color: #E2F6F2;
+}
+
+.meta.preprocessor {
+  color: #65961E;
+}
+
+.keyword.control.import {
+  color: #65961E;
+}
+
+.entity.name.function, .support.function.any-method {
+  color: #FFD767;
+}
+
+.entity.name.type {
+  text-decoration: underline;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+}
+
+.variable.parameter {
+  font-style: italic;
+}
+
+.storage.type.method {
+  color: #70727E;
+}
+
+.meta.section .entity.name.section, .declaration.section .entity.name.section {
+  font-style: italic;
+  color: #E2F6FF;
+}
+
+.support.function {
+  color: #BCBE42;
+}
+
+.support.class, .support.type {
+  color: #FFF7B0;
+}
+
+.support.constant {
+  color: #529C08;
+}
+
+.support.variable {
+  color: #2E65A5;
+}
+
+.keyword.operator.js {
+  color: #687687;
+}
+
+.invalid {
+  color: #FFFFFF;
+  background-color: #990000;
+}
+
+.invalid.deprecated.trailing-whitespace {
+  color: #0A0B0C;
+  background-color: #FFD0D0;
+}
+
+.text .source, .string.unquoted {
+  background-color: rgba(24, 17, 17, 0);
+}
+
+.text .source .string.unquoted, .text .source .text .source {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.meta.tag.preprocessor.xml {
+  color: #68685B;
+}
+
+.meta.tag.sgml.doctype, .meta.tag.sgml.doctype .entity, .meta.tag.sgml.doctype .string, .meta.tag.preprocessor.xml, .meta.tag.preprocessor.xml .entity, .meta.tag.preprocessor.xml .string {
+  color: #888888;
+}
+
+.string.quoted.docinfo.doctype.DTD {
+  font-style: italic;
+}
+
+.meta.tag, .declaration.tag {
+  color: #4266A0;
+}
+
+.entity.name.tag {
+}
+
+.entity.other.attribute-name {
+  color: #89725B;
+}
+
+.markup.heading {
+  color: #4266A0;
+}
+
+.markup.quote {
+  font-style: italic;
+  color: #000000;
+}
+
+.markup.list {
+  color: #B90690;
+}
